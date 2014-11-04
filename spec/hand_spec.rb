@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe BlackJack::Hand do
-  before do
-    pending("do this spec after Deck is complete")
-  end
 
   let(:hand) { BlackJack::Hand.new }
 
@@ -12,12 +9,12 @@ describe BlackJack::Hand do
       expect(hand.empty?).to be == true
     end
 
-    xit "has a values array that is empty" do
+    it "has a values array that is empty" do
       expect(hand.values).to be_empty
     end
   end
 
-  xdescribe '#add' do
+  describe '#add' do
     it "increases the size of the hand" do
       hand.add(BlackJack::Card.new(:heart, 'Q'))
       expect(hand.size).to be == 1

@@ -26,6 +26,7 @@ module BlackJack
   end
 
   def shuffle
+    @deck.shuffle #why does test pass even with this removed?
   end
 
   def deal

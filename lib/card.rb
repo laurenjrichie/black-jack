@@ -15,9 +15,9 @@ module BlackJack
   end
 
   def values
-    if face == "A"
+    if face== "A"
       [1, 11]
-    elsif face == "Q" || face == "K" || face == "J"
+    elsif face== "Q" || face== "K" || face== "J"
       [10]
     else
       [face().to_i]
