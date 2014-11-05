@@ -25,13 +25,13 @@ module BlackJack
     @deck
   end
 
-  def shuffle
-    @deck.shuffle #why does test pass even with this removed?
+  def shuffle     # @deck.shuffle also works here instead of cards - but John prefers using cards
+    cards.shuffle # why does test pass even with this removed?
   end
 
   def deal
-    @deck.pop
-  end
+    cards.pop     # cards better than @deck here
+  end             # this technically gives us back what we're popping off the array
 
   end
 end
